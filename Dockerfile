@@ -1,0 +1,7 @@
+FROM debian:11-slim
+
+ARG MY_VARIABLE=aww
+
+ENV MY_VARIABLE ${MY_VARIABLE}
+
+RUN echo "The value of MY_VARIABLE is: ${MY_VARIABLE}"
